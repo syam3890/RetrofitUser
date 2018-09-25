@@ -61,12 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                sendLoginRequest();
             }
         } else if (v.getId() == R.id.mButtonList) {
-//            sendNotificationListRequest();
-//            ServiceCalling.sendNotificationListRequestNew(mContext, mNotiList);
-//            ServiceCalling.sendFriendDetailsRequest(mContext);
-
             ServiceCalling.sendSignup(mContext, "");
-
         }
     }
 
