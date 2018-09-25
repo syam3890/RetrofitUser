@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(mContext, LinearLayoutManager.VERTICAL, false);
         mNotiList.setLayoutManager(mLayoutManager);
 
-
         mButtonsave.setOnClickListener(this);
         mButtonList.setOnClickListener(this);
     }
@@ -59,11 +58,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             } else if (mETPassword.getText().toString().trim().isEmpty()) {
                 Toast.makeText(mContext, "Enter user password..", Toast.LENGTH_SHORT).show();
             } else {
-                //method to login user
 //                sendLoginRequest();
             }
         } else if (v.getId() == R.id.mButtonList) {
-            //method to get notification list
 //            sendNotificationListRequest();
 //            ServiceCalling.sendNotificationListRequestNew(mContext, mNotiList);
 //            ServiceCalling.sendFriendDetailsRequest(mContext);
