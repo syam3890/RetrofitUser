@@ -43,14 +43,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mButtonList = findViewById(R.id.mButtonList);
         mNotiList = findViewById(R.id.mNotiList);
 
-
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(mContext, LinearLayoutManager.VERTICAL, false);
         mNotiList.setLayoutManager(mLayoutManager);
 
 
         mButtonsave.setOnClickListener(this);
         mButtonList.setOnClickListener(this);
-
     }
 
     @Override
